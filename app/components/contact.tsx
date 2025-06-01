@@ -35,6 +35,9 @@ export function Contact() {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
 
+    const fieldName = name as keyof typeof formValues;
+
+
     if (name === 'message') {
       if (value.length <= MAX_CHARS) {
         setFormValues({ ...formValues, [name]: value });
@@ -44,7 +47,7 @@ export function Contact() {
       setFormValues({ ...formValues, [name]: value });
     }
 
-    if (formErrors[name]) {
+    if (formErrors[fieldName]) {
       setFormErrors({
         ...formErrors,
         [name]: ''
