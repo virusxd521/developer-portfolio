@@ -138,7 +138,7 @@ export function Contact() {
               </p>
             </div>
           </div>
-          <form ref={form} className="space-y-6" onSubmit={handleSubmit}>
+          <form ref={form} className="space-y-6" id="contact" onSubmit={handleSubmit}>
             <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/20">
 
               {/* Name Field */}
