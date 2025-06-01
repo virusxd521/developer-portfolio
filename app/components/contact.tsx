@@ -32,7 +32,7 @@ export function Contact() {
   const [focusedField, setFocusedField] = useState('');
   const MAX_CHARS = 500;
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
 
     if (name === 'message') {
