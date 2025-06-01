@@ -128,9 +128,8 @@ export function HeroSection() {
                     <Image
                       src="/images/daniel-benisti-profile.jpeg"
                       alt="Daniel Benisti - Full Stack Developer"
-                      fill
-                      className="object-cover"
-                      priority
+                      width={500}
+                      height={333}
                     />
                   </div>
                 </span>
